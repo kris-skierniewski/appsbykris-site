@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Your App</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">Apps by Kris</a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container content">
+    <h1>About the App</h1>
+    <p>Write a couple of paragraphs about the app: why you made it, key goals, short story, etc.</p>
+
+    <h2>Quick facts</h2>
+    <ul>
+      <li>Platform: iOS</li>
+      <li>Version: 1.0</li>
+      <li>Contact: <a href="contact.html">Contact page</a></li>
+    </ul>
+  </main>
+
+  <footer class="site-footer container">
+    <p>© <span id="year2"></span> Apps by Kris</p>
+  </footer>
+
+  <script>document.getElementById('year2').textContent = new Date().getFullYear();</script>
+</body>
+</html>

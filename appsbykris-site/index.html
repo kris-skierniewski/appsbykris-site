@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your App — Short Tagline</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">Apps by Kris</a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="hero container">
+    <h1>Basket Buddy</h1>
+    <p class="tagline">Grocery price tracker & shopping list.</p>
+
+    <div class="download-row">
+      <!-- Replace "#" with your App Store / Play Store URLs -->
+      <a class="btn" href="https://apps.apple.com/gb/app/basket-buddy/id6737136368" target="_blank" rel="noopener">Download on the App Store</a>
+    </div>
+
+    <section class="features">
+      <article>
+        <h2>Grocery price journal</h2>
+        <p>Log grocery items with descriptions, quantities and prices.</p>
+        <p>Build your own personal database of where you found the best deals.</p>
+
+      </article>
+      <article>
+        <h2>Shopping list</h2>
+        <p>Create and manage a shopping list.</p>
+        <p>Organise your shopping list into categories using AI.</p>
+      </article>
+      <article>
+        <h2>Collaboration</h2>
+        <p>Add friends and family to your group.</p>
+        <p>Knowledge share to maximise your savings power.</p>
+        <p>Your shopping list automatically synchronises with members of the group.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>© <span id="year"></span> Apps by Kris — <a href="contact.html">Contact</a></p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

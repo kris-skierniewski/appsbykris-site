@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Your App</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">Apps by Kris</a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container content">
+    <h1>Contact</h1>
+    <p>Email: <a href="mailto:hello@appsbykris.com">hello@appsbykris.com</a></p>
+    <p>Or follow me on: <a href="#" target="_blank">Twitter</a> · <a href="#" target="_blank">GitHub</a></p>
+
+    <p><em>Note:</em> If you want a form that submits, use a third-party service (Formspree, Netlify Forms, etc.) because GitHub Pages is static.</p>
+  </main>
+
+  <footer class="site-footer container">
+    <p>© <span id="year3"></span> Apps by Kris</p>
+  </footer>
+
+  <script>document.getElementById('year3').textContent = new Date().getFullYear();</script>
+</body>
+</html>

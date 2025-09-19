@@ -1,0 +1,48 @@
+/* Very small responsive stylesheet — tweak to taste */
+:root {
+  --accent:#1b6cff;
+  --bg:#fafafa;
+  --text:#222;
+  --muted:#666;
+  --container:1100px;
+  --radius:10px;
+}
+
+*{box-sizing:border-box}
+body{
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+  color:var(--text);
+  margin:0;
+  background:var(--bg);
+  line-height:1.5;
+}
+.container{max-width:var(--container);margin:0 auto;padding:1rem}
+
+.site-header{background:white;box-shadow:0 1px 2px rgba(0,0,0,.04)}
+.site-header .container{display:flex;align-items:center;justify-content:space-between;padding:0.75rem 1rem}
+.logo{font-weight:700;text-decoration:none;color:var(--text)}
+.main-nav a{margin-left:1rem;text-decoration:none;color:var(--muted)}
+.main-nav a:hover,.main-nav a.active{color:var(--accent)}
+
+.hero{padding:3rem 1rem;text-align:center}
+.hero h1{margin:.2rem 0;font-size:2rem}
+.tagline{color:var(--muted);margin-bottom:1rem}
+
+.download-row{display:flex;gap:.5rem;justify-content:center;flex-wrap:wrap;margin:1rem 0}
+.btn{
+  display:inline-block;padding:.6rem 1rem;border-radius:8px;text-decoration:none;background:var(--accent);color:white;font-weight:600;
+  box-shadow:0 3px 8px rgba(27,108,255,0.15);
+}
+
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-top:2rem}
+.features article{background:white;padding:1rem;border-radius:8px;box-shadow:0 1px 2px rgba(0,0,0,.04)}
+
+.content{padding:2rem 1rem;background:transparent}
+
+.site-footer{padding:1rem;text-align:center;color:var(--muted);font-size:.95rem}
+
+/* small screens */
+@media (max-width:640px){
+  .main-nav{display:none} /* keep it simple for now */
+  .site-header .container{justify-content:space-between}
+}
