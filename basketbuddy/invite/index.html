@@ -3,14 +3,24 @@
 <head>
     <title>Join Shopping Group - Basket Buddy</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../css/style.css">
+    <meta name="apple-itunes-app" content="app-id=6737136368">
     <script>
         // Get the invite code from URL
         const urlParams = new URLSearchParams(window.location.search);
         const inviteCode = urlParams.get('code');
 
+        if (inviteCode) {
+           // Update the Smart App Banner with the invite code
+           const metaTag = document.querySelector('meta[name="apple-itunes-app"]');
+           if (metaTag) {
+               metaTag.content = `app-id=6737136368, app-argument=basketbuddy://invite?code=${inviteCode}`;
+           }
+         }
+
         // Redirect to App Store after a short delay
         setTimeout(() => {
-            window.location.href = 'https://apps.apple.com/gb/app/basket-buddy/id6737136368';
+            //window.location.href = 'https://apps.apple.com/gb/app/basket-buddy/id6737136368';
         }, 3000);
     </script>
 </head>
