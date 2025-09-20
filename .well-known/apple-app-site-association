@@ -1,0 +1,15 @@
+{
+    "applinks": {
+        "details": [
+            {
+                "appIDs": [ "BS24SDA9U2.com.kris.skierniewski.price-tracker" ],
+                "components": [
+                    {
+                        "/": "/basketbuddy/invite*",
+                        "comment": "Handles invite links"
+                    }
+                ]
+            }
+        ]
+    }
+}

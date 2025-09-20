@@ -43,6 +43,8 @@ body{
 
 /* small screens */
 @media (max-width:640px){
-  .main-nav{display:none} /* keep it simple for now */
+  .main-nav{
+    flex-direction: : column;
+    } /* keep it simple for now */
   .site-header .container{justify-content:space-between}
 }

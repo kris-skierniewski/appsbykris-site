@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Join Shopping Group - Basket Buddy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        // Get the invite code from URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const inviteCode = urlParams.get('code');
+
+        // Redirect to App Store after a short delay
+        setTimeout(() => {
+            window.location.href = 'https://apps.apple.com/gb/app/basket-buddy/id6737136368';
+        }, 3000);
+    </script>
+</head>
+<body>
+    <h1>You've been invited to join a shopping group!</h1>
+    <p>Invite Code: <strong id="code"></strong></p>
+    <p>Opening Basket Buddy app...</p>
+    <p><a href="https://apps.apple.com/gb/app/basket-buddy/id6737136368">Download from App Store</a></p>
+
+    <script>
+        if (inviteCode) {
+            document.getElementById('code').textContent = inviteCode;
+        }
+    </script>
+</body>
+</html>
