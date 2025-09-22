@@ -6,6 +6,16 @@
   <title>Apps by Kris</title>
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="stylesheet" href="css/style.css" />
+
+  <style>
+  .icon {
+    display: block;              /* makes margin auto work */
+    margin: 0 auto;              /* centers horizontally */
+    width: 80px;                /* set size (optional) */
+    height: auto;                /* keep aspect ratio */
+    border-radius: 20%;          /* rounded corners */
+  }
+</style>
 </head>
 <body>
   <header class="site-header">
@@ -14,12 +24,12 @@
       <nav class="main-nav">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
 
   <main class="hero container">
+    <img src="images/basketBuddy-appIcon.png" alt="App Icon" class="icon">
     <h1>Basket Buddy</h1>
     <p class="tagline">Grocery price tracker & shopping list.</p>
 
@@ -30,18 +40,21 @@
 
     <section class="features">
       <article>
-        <h2>Grocery price journal</h2>
+        <img src="images/basketBuddy-screenshot1.png" alt="App screenshot" class="screenshots">
+          <h2>Grocery price journal</h2>
         <p>Log grocery items with descriptions, quantities and prices.</p>
         <p>Build your own personal database of where you found the best deals.</p>
 
       </article>
       <article>
+        <img src="images/basketBuddy-screenshot2.png" alt="App screenshot" class="screenshots">
         <h2>Shopping list</h2>
         <p>Create and manage a shopping list.</p>
         <p>Organise your shopping list into categories using AI.</p>
       </article>
       <article>
-        <h2>Collaboration</h2>
+        <img src="images/basketBuddy-screenshot3.png" alt="App screenshot" class="screenshots">
+          <h2>Collaboration</h2>
         <p>Add friends and family to your group.</p>
         <p>Knowledge share to maximise your savings power.</p>
         <p>Your shopping list automatically synchronises with members of the group.</p>
@@ -50,7 +63,7 @@
   </main>
 
   <footer class="site-footer container">
-    <p>© <span id="year"></span> Apps by Kris — <a href="contact.html">Contact</a></p>
+    <p>© <span id="year"></span> Apps by Kris</p>
   </footer>
 
   <script>

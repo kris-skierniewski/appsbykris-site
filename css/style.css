@@ -20,7 +20,7 @@ body{
 
 .site-header{background:white;box-shadow:0 1px 2px rgba(0,0,0,.04)}
 .site-header .container{display:flex;align-items:center;justify-content:space-between;padding:0.75rem 1rem}
-.logo{font-weight:700;text-decoration:none;color:var(--text)}
+.logo{font-weight:200;text-decoration:none;color:var(--text)}
 .main-nav a{margin-left:1rem;text-decoration:none;color:var(--muted)}
 .main-nav a:hover,.main-nav a.active{color:var(--accent)}
 
@@ -36,6 +36,10 @@ body{
 
 .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-top:2rem}
 .features article{background:white;padding:1rem;border-radius:8px;box-shadow:0 1px 2px rgba(0,0,0,.04)}
+.screenshots {
+  width: 100%;       /* take full width of parent */
+  height: auto;
+}
 
 .content{padding:2rem 1rem;background:transparent}
 

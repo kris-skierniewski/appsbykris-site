@@ -3,6 +3,7 @@
 <head>
     <title>Join Shopping Group - Basket Buddy</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="../../images/basketBuddy-appIcon.ico">
     <link rel="stylesheet" href="../../css/style.css">
     <meta name="apple-itunes-app" content="app-id=6737136368">
     <script>
@@ -23,12 +24,48 @@
             //window.location.href = 'https://apps.apple.com/gb/app/basket-buddy/id6737136368';
         }, 3000);
     </script>
+    <style>
+    .icon {
+      display: block;              /* makes margin auto work */
+      margin: 0 auto;              /* centers horizontally */
+      width: 100px;                /* set size (optional) */
+      height: auto;                /* keep aspect ratio */
+      border-radius: 20%;          /* rounded corners */
+    }
+    .instructions {
+      text-align: left;
+    }
+  </style>
 </head>
 <body>
-    <h1>You've been invited to join a shopping group!</h1>
+
+  <header class="site-header">
+      <div class="container">
+        <a class="logo" href="index.html">Apps by Kris</a>
+        <nav class="main-nav">
+          <a href="../../index.html">Home</a>
+          <a href="../../about.html">About</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="hero container">
+    <img src="../../images/basketBuddy-appIcon.png" alt="App Icon" class="icon">
+    <h1>You've been invited to join a shopping group in Basket Buddy</h1>
     <p>Invite Code: <strong id="code"></strong></p>
-    <p>Opening Basket Buddy app...</p>
-    <p><a href="https://apps.apple.com/gb/app/basket-buddy/id6737136368">Download from App Store</a></p>
+<section class="instructions">
+    <ol>
+    <li>Download <strong>Basket Buddy</strong> from the App Store.</li>
+    <li>Return to this page and tap <strong>"Open"</strong> in the app banner at the top.</li>
+  </ol>
+</section>
+
+    <div class="download-row">
+      <!-- Replace "#" with your App Store / Play Store URLs -->
+      <a class="btn" href="https://apps.apple.com/gb/app/basket-buddy/id6737136368" target="_blank" rel="noopener">Download on the App Store</a>
+    </div>
+
+  </main>
 
     <script>
         if (inviteCode) {
